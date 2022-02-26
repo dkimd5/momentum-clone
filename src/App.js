@@ -2,6 +2,7 @@ import React from "react";
 import Time from "./components/Time";
 import Weather from "./components/Weather";
 import DateToday from "./components/DateToday";
+import Quote from "./components/Quote";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Weather />
       <Time />
       <DateToday />
+      <Quote />
     </div>
   );
 }
