@@ -24,7 +24,7 @@ function Weather() {
 
   return (
     <div>
-      <p>{data.main.temp}</p>
+      <p>{data.main.temp.toFixed(0)}</p>
     </div>
   );
 }
