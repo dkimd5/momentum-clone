@@ -1,8 +1,7 @@
 import React from "react";
 
-function Date() {
+function DateToday() {
   let today = new Date();
-  console.log(today);
   let date =
     today.getFullYear() + "/" + today.getMonth() + "/" + today.getDate();
 
@@ -13,4 +12,4 @@ function Date() {
   );
 }
 
-export default Date;
+export default DateToday;
