@@ -8,6 +8,10 @@ export const Welcome = styled.div`
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const TimeStamp = styled.div`
