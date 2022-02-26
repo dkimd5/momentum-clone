@@ -25,7 +25,7 @@ function Weather() {
 
   return (
     <WeatherContainer>
-      <Temp>{data.main.temp.toFixed(0)}</Temp>
+      <Temp>{data.main.temp.toFixed(0)}&#176;</Temp>
       <City>Moscow</City>
     </WeatherContainer>
   );
