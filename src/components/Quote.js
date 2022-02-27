@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { QuoteContainer, Text, TextAuthor } from "./QuoteStyles";
 
-const url = "https://goquotes-api.herokuapp.com/api/v1/random?count=1";
+const url = "https://api.quotable.io/random";
 
 function Quote() {
   const [data, setData] = useState(null);
+  console.log(data);
 
   useEffect(() => {
     axios
@@ -21,9 +22,9 @@ function Quote() {
   return (
     <QuoteContainer>
       <Text>
-        <i>"{data?.quotes[0].text}"</i>
+        <i>"{data?.content}"</i>
       </Text>
-      <TextAuthor>{data?.quotes[0].author}</TextAuthor>
+      <TextAuthor>{data?.author}</TextAuthor>
     </QuoteContainer>
   );
 }
