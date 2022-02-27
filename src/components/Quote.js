@@ -20,7 +20,9 @@ function Quote() {
 
   return (
     <QuoteContainer>
-      <Text>"{data?.quotes[0].text}"</Text>
+      <Text>
+        <i>"{data?.quotes[0].text}"</i>
+      </Text>
       <TextAuthor>{data?.quotes[0].author}</TextAuthor>
     </QuoteContainer>
   );
