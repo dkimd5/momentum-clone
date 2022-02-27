@@ -4,7 +4,7 @@ import { DateContainer } from "./DateTodayStyles";
 function DateToday() {
   let today = new Date();
   let date =
-    today.getFullYear() + "/" + today.getDate() + "/" + (today.getMonth() + 1);
+    today.getDate() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear();
 
   return (
     <DateContainer>
