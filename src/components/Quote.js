@@ -6,7 +6,6 @@ const url = "https://api.quotable.io/random";
 
 function Quote() {
   const [data, setData] = useState(null);
-  console.log(data);
 
   useEffect(() => {
     axios
